@@ -1,0 +1,9 @@
+allow hal_wifi_default device:chr_file { open } ;
+allow hal_wifi_default device:chr_file { write } ;
+allow hal_wifi_default init:unix_dgram_socket { sendto } ;
+allow hal_wifi_default socket_device:dir { add_name } ;
+allow hal_wifi_default socket_device:dir { write } ;
+allow hal_wifi_default socket_device:sock_file { create } ;
+allow hal_wifi_default socket_device:sock_file { setattr } ;
+allow hal_wifi_default socket_device:sock_file { write } ;
+allow hal_wifi_default vendor_default_prop:property_service { set } ;

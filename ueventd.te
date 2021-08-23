@@ -1,0 +1,5 @@
+allow ueventd firmware_file:dir { search } ;
+allow ueventd firmware_file:file { getattr } ;
+allow ueventd firmware_file:file { open } ;
+allow ueventd firmware_file:file { read } ;
+allow ueventd mnt_vendor_file:dir { search } ;
