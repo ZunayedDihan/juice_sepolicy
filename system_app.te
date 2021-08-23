@@ -10,3 +10,6 @@ allow system_app vendor_file:file { getattr } ;
 allow system_app vendor_file:file { map } ;
 allow system_app vendor_file:file { open } ;
 allow system_app vendor_file:file { read } ;
+
+allow system_app sysfs_zram:dir search;
+allow system_app sysfs_zram:file r_file_perms;
