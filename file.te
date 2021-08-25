@@ -1,7 +1,0 @@
-type adsprpcd_file, file_type;
-type bt_firmware_file, file_type;
-type firmware_file, file_type;
-type persist_file, file_type;
-
-# Keymaster
-type hal_keymaster_qti_exec, exec_type, file_type, vendor_file_type;

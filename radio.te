@@ -1,3 +1,0 @@
-allow radio default_android_hwservice:hwservice_manager { find } ;
-allow radio init:binder { call } ;
-allow radio init:binder { transfer } ;
