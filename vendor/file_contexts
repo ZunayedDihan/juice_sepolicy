@@ -21,9 +21,6 @@
 /dev/elliptic[0-9]                                                      u:object_r:ultrasound_device:s0
 /dev/mius(.*)?                                                          u:object_r:ultrasound_device:s0
 
-# Fingerprint
-/vendor/bin/hw/android\.hardware\.biometrics\.fingerprint@2.1-service\.vayu           u:object_r:hal_fingerprint_default_exec:s0
-
 # Fingerprint - devices
 /dev/goodix_fp                                                          u:object_r:fingerprint_device:s0
 
@@ -51,21 +48,11 @@
 /dev/lirc[0-9]                                                          u:object_r:lirc_device:s0
 /dev/spidev[0-9]\.1                                                     u:object_r:lirc_device:s0
 
-# LED
-/sys/devices/platform/soc/[a-z0-9]+.qcom,spmi/spmi-[0-1]/spmi0-0[0-9]/[a-z0-9]+.qcom,spmi:qcom,[a-z0-9]+@[0-9]:qcom,leds@d000/leds(/.*)?            u:object_r:sysfs_leds:s0
-/sys/devices/platform/soc/[a-z0-9]+.i2c/i2c-[0-9]/[0-9]-[0-9]+/leds(/.*)?                                                                           u:object_r:sysfs_leds:s0
-
 # Lights
-/vendor/bin/hw/android\.hardware\.lights-service\.vayu                                         u:object_r:hal_light_default_exec:s0
-
-# Mlipay
-/vendor/bin/mlipayd@1\.1                                                u:object_r:hal_mlipay_default_exec:s0
+/vendor/bin/hw/android\.hardware\.lights-service\.xiaomi_juice                                      u:object_r:hal_light_default_exec:s0
 
 # Persist subsystem
 /mnt/vendor/persist/subsys(/.*)?                                        u:object_r:persist_subsys_file:s0
-
-# Power Stats HAL
-/vendor/bin/hw/android\.hardware\.power\.stats@1\.0-service\.mock                                       u:object_r:hal_power_stats_default_exec:s0
 
 # Sensors
 /dev/akm09970                                                                                                                   u:object_r:hall_device:s0
