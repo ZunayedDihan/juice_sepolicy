@@ -13,3 +13,6 @@ type pps_socket, file_type;
 #sysfs
 type sysfs_graphics, sysfs_type, fs_type;
 type sysfs_kgsl, sysfs_type, fs_type;
+
+# Keymaster
+type hal_keymaster_qti_exec, exec_type, file_type, vendor_file_type;
